@@ -7,7 +7,7 @@
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass sass/main.scss css/main.css -w",
-    "compile:material": "node-sass sass/main.scss css/main.css -w"
+    "compile:material": "node-sass sass/materialize.scss css/materialize.min.css -w"
   },
   "author": "",
   "license": "ISC",
