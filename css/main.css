@@ -3,3 +3,7 @@
 
 .icon-block .material-icons {
   font-size: inherit; }
+
+.fullscreen {
+  height: 100vh;
+  width: 100%; }
