@@ -1,8 +1,47 @@
+body {
+  background: #f6f6f6;
+  font-family: 'Exo 2', sans-serif; }
+
+.site-wrapper {
+  display: flex; }
+
+.fixed-panel {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  flex: 0 0 20%;
+  position: relative; }
+  .fixed-panel__nav {
+    position: fixed;
+    display: flex;
+    flex-flow: column nowrap;
+    top: 20%; }
+
+.content {
+  display: block;
+  flex: 0 0 80%;
+  height: 100vh; }
+  .content__about {
+    background-color: #fff;
+    height: 100vh;
+    position: relative; }
+    .content__about .description {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .content__project {
+    background-color: red;
+    height: 100vh; }
+
 .icon-block {
   padding: 0 15px; }
 
 .icon-block .material-icons {
   font-size: inherit; }
+
+.section--intro {
+  margin: 2rem 0; }
 
 .fullscreen {
   height: 100vh;
