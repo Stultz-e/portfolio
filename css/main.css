@@ -1,5 +1,6 @@
 body {
-  background: #f6f6f6;
+  color: #444;
+  background: #222;
   font-family: 'Exo 2', sans-serif; }
 
 .site-wrapper {
@@ -15,16 +16,26 @@ body {
     position: fixed;
     display: flex;
     flex-flow: column nowrap;
-    top: 20%; }
+    top: 15%; }
+    .fixed-panel__nav a {
+      color: #f6f6f6;
+      font-size: 24px;
+      padding: 1rem 0; }
+    .fixed-panel__nav .gif-case {
+      max-width: 100%;
+      margin: auto;
+      margin-bottom: 3rem; }
 
 .content {
   display: block;
   flex: 0 0 80%;
   height: 100vh; }
   .content__about {
-    background-color: #fff;
     height: 100vh;
-    position: relative; }
+    position: relative;
+    background-image: url("/img/bg-about.png");
+    background-size: cover;
+    background-position: center; }
     .content__about .description {
       position: absolute;
       top: 30%;
@@ -33,16 +44,3 @@ body {
   .content__project {
     background-color: red;
     height: 100vh; }
-
-.icon-block {
-  padding: 0 15px; }
-
-.icon-block .material-icons {
-  font-size: inherit; }
-
-.section--intro {
-  margin: 2rem 0; }
-
-.fullscreen {
-  height: 100vh;
-  width: 100%; }
