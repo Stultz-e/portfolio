@@ -1,6 +1,6 @@
 body {
   color: #444;
-  background: #222;
+  background: #e6e6e6;
   font-family: 'Exo 2', sans-serif; }
 
 .site-wrapper {
@@ -18,7 +18,7 @@ body {
     flex-flow: column nowrap;
     top: 15%; }
     .fixed-panel__nav a {
-      color: #f6f6f6;
+      color: #444;
       font-size: 24px;
       padding: 1rem 0; }
     .fixed-panel__nav .gif-case {
@@ -35,7 +35,8 @@ body {
     position: relative;
     background-image: url("/img/bg-about.png");
     background-size: cover;
-    background-position: center; }
+    background-position: center;
+    background-attachment: fixed; }
     .content__about .description {
       position: absolute;
       top: 30%;
