@@ -5,7 +5,10 @@ body {
     font-family: 'Exo 2', sans-serif;
   }
 
-
+.section {
+  margin: 0;
+  padding: 0;
+}
   
   .site-wrapper {
     display: flex; 
@@ -46,14 +49,8 @@ body {
   
     &__about {
       height: 100vh;
-      position: relative;
-      background-image: url('/img/bg-about.png');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      
 
-
+    
       .description {
          @include absCenter;
       }
@@ -63,6 +60,7 @@ body {
     &__project {
       background-color: red;
       height: 100vh;
+      
     }
   }
   

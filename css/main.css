@@ -3,6 +3,10 @@ body {
   background: #e6e6e6;
   font-family: 'Exo 2', sans-serif; }
 
+.section {
+  margin: 0;
+  padding: 0; }
+
 .site-wrapper {
   display: flex; }
 
@@ -31,15 +35,10 @@ body {
   flex: 0 0 80%;
   height: 100vh; }
   .content__about {
-    height: 100vh;
-    position: relative;
-    background-image: url("/img/bg-about.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; }
+    height: 100vh; }
     .content__about .description {
       position: absolute;
-      top: 30%;
+      top: 40vh;
       left: 50%;
       transform: translate(-50%, -50%); }
   .content__project {

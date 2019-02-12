@@ -31,24 +31,25 @@
 
 
     <section class="content">
-      <section class="content__about">
+      <section class="content__about scrollspy parallax-container" id="about">
+          <div class="parallax"><img src='img/bg-about.png'></div>
         <div class="description">
             <h1>Hello I am Chris Stultz</h1>
             <h5>I am a UX/UI Designer and Frontend Developer</p>
         </div>
       </section>
 
-      <section class="content__project">
+      <section class="content__project scrollspy" id="project1">
         <h5>project 1</h5>
         <p>my name is chris and i eat ass</p>
       </section>
 
-      <section class="content__project">
+      <section class="content__project scrollspy" id="project2">
         <h5>project 2</h5>
         <p>my name is chris and i eat ass</p>
       </section>
 
-      <section class="content__project">
+      <section class="content__project scrollspy" id="project3">
         <h5>project 3</h5>
         <p>my name is chris and i eat ass</p>
       </section>
@@ -71,6 +72,15 @@
         interval: 6000
       });
     });
+
+    $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+     
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });   
+
   </script>
 </body>
 </html>
