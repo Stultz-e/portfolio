@@ -1,7 +1,7 @@
 
 body {
     color: #444;
-    background: #e6e6e6;
+    background: white;
     font-family: 'Exo 2', sans-serif;
   }
 
@@ -27,34 +27,55 @@ body {
       flex-flow: column nowrap;
       top: 15%;
 
-      a {  
+      .nav-item {  
         color: #444;
         font-size: 24px;
-        padding: 1rem 0;
+        padding: 2rem 0;
+        transition: .2s ease-out;
+        position: relative;
         
+        a {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+
+          &:hover {
+            color: #fff;
+            background: linear-gradient(to bottom right, #A6FFCB, #12D8FA, #1FA2FF); 
+            transform: scale(1.2);
+            transform-origin: left;
+  
+          }
+        }
       }
 
-      .gif-case {
+      .logo {
         max-width: 100%;
-        margin: auto;
         margin-bottom: 3rem;
       }
     }
   }
   
+  .nav-item .active {
+      background: linear-gradient(to bottom right, #A6FFCB, #12D8FA, #1FA2FF); 
+      color: #fff;
+  }
+
   .content {
     display: block;
     flex: 0 0 80%;
     height: 100vh;
   
     &__about {
+      color: #fff;
       height: 100vh;
-
-    
+      background: #1FA2FF;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to bottom right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to bottom right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       .description {
          @include absCenter;
       }
-
     }
   
     &__project {
