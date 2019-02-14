@@ -1,8 +1,7 @@
 @mixin absCenter {
     position: absolute;
-    top: 40vh;
+    top: 30vh;
     left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 @mixin fixedCenter {
