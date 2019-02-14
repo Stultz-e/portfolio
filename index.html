@@ -36,9 +36,26 @@
         </div>
       </section>
 
-      <section class="content__project scrollspy" id="project1">
+      <section class="content__project scrollspy" id="project1" style="padding:0.75rem">
         <h5>project 1</h5>
         <p>my name is chris and i eat ass</p>
+
+          <div class="row">
+            <div class="col s6 l3">
+              <img class="materialboxed" width="100%" src="img/templateimages/midrise.png">
+            </div>
+              <div class="col s6 l3">
+                <img class="materialboxed" width="100%" src="img/templateimages/midrise.png">
+              </div>
+              <div class="col s6 l3">
+                <img class="materialboxed" width="100%" src="img/templateimages/midrise.png">
+              </div>
+              <div class="col s6 l3">
+                <img class="materialboxed" width="100%" src="img/templateimages/midrise.png">
+              </div>
+          </div>
+
+
       </section>
 
       <section class="content__project scrollspy" id="project2">
@@ -80,6 +97,11 @@
   $(document).ready(function(){
     $('.parallax').parallax();
   });   
+
+  
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
 
   </script>
 </body>

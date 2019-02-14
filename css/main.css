@@ -1,6 +1,9 @@
 html {
   font-size: 62.5%; }
 
+html, body {
+  height: 100%; }
+
 body {
   color: #444;
   background: white;
@@ -54,23 +57,14 @@ body {
       height: auto; }
 
 .nav-item .active {
-  background: linear-gradient(to bottom right, #A6FFCB, #12D8FA, #1FA2FF);
-  color: #fff;
   position: relative; }
 
 .content {
-  display: block;
   flex: 0 0 80%;
   height: 100vh; }
   .content__about {
     color: #fff;
-    height: 100vh;
-    background: #1FA2FF;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom right, #A6FFCB, #12D8FA, #1FA2FF);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom right, #A6FFCB, #12D8FA, #1FA2FF);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+    height: 100vh; }
     .content__about .description {
       position: absolute;
       top: 30vh;
