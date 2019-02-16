@@ -9,7 +9,8 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -23,30 +24,30 @@
       <div class="fixed-panel__nav" id="navContainer">
         <img class="logo responsive-img" src="img/Logo.png" alt="logo">
         <div class="nav-item active"><a href="#about" id="#about">About</a></div>
-        <div class="nav-item"><a href="#project1" id="#project1" >project1</a></div>
+        <div class="nav-item"><a href="#project1" id="#project1">project1</a></div>
         <div class="nav-item"><a href="#project2" id="#project2">project2</a></div>
-        <div class="nav-item"><a href="#project3" id="#project3" >Contact</a></div>
-            <div class="icons">
-                <a class="" href="https://facebook.com">
-                  <i class="fab fa-facebook"></i>
-                </a>
-         
-                <a href="https://linkedin.com">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-     
-                <a href="https://instagram.com">
-                  <i class="fab fa-instagram"></i>
-                </a>
-    
-                <a href="https://instagram.com">
-                  <i class="fab fa-github"></i>
-                </a>
-    
-                <a href="https://behance.com">
-                  <i class="fab fa-behance"></i>
-                </a>
-            </div>
+        <div class="nav-item"><a href="#project3" id="#project3">Contact</a></div>
+        <div class="icons">
+          <a class="" href="https://facebook.com">
+            <i class="fab fa-facebook"></i>
+          </a>
+
+          <a href="https://linkedin.com">
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="https://instagram.com">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="https://instagram.com">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="https://behance.com">
+            <i class="fab fa-behance"></i>
+          </a>
+        </div>
       </div>
     </aside>
 
@@ -54,19 +55,20 @@
     <div class="content">
       <section class="content__about scrollspy" id="about">
         <div class="description animated bounceInUp wow">
-            <h1>Hello I am Chris Stultz</h1>
-            <h5>I am a UX/UI Designer and Frontend Developer</p>
+          <h1>Hello I am Chris Stultz</h1>
+          <h5>I am a UX/UI Designer and Frontend Developer</p>
         </div>
       </section>
 
       <section class="content__company scrollspy" id="project1">
         <div class="container">
-          <div class="row valign-wrapper animated fadeInLeft">
-                <img class="responsive-img mr2" src="img/365logo.png" alt="365Connect logo">
-                <div class="employment-info">
-                    <h3>I currently work at a New Orleans based <br> company 365Connect.</h3>
-                    <p>I design website templates which are built into a content managment system<br> for the housing industry </p>
-                </div>
+          <div class="row valign-wrapper animated fadeInRight wow">
+            <img class="responsive-img mr2" src="img/365logo.png" alt="365Connect logo">
+            <div class="employment-info">
+              <h3>I currently work at a New Orleans based <br> company 365Connect.</h3>
+              <p>I design website templates which are built into a content managment system<br> for the housing
+                industry </p>
+            </div>
           </div>
         </div>
       </section>
@@ -75,13 +77,13 @@
         <h5>project 2</h5>
         <p>my name is chris and i eat ass</p>
         <div class="row">
-            <div class="col s6 l8">
-              <img class="materialboxed responsive-img" src="img/templateimages/cometxd.png">
-            </div>
-              <div class="col s6 l4">
-                <img class="responsive-img" src="img/templateimages/comet.jpg">
-              </div>
+          <div class="col s6 l8">
+            <img class="materialboxed responsive-img" src="img/templateimages/cometxd.png">
           </div>
+          <div class="col s6 l4">
+            <img class="responsive-img" src="img/templateimages/comet.jpg">
+          </div>
+        </div>
       </section>
 
       <section class="content__project scrollspy" id="project3">
@@ -89,11 +91,11 @@
           <div class="row">
             <h5>Always looking for web development and design opportunities</h5>
             <form class="col s8">
-            <div class="row">
+              <div class="row">
                 <div class="input-field col s12 m4">
-                    <input id="input_text" type="text">
-                    <label for="input_text">Name</label>
-                  </div>
+                  <input id="input_text" type="text">
+                  <label for="input_text">Name</label>
+                </div>
                 <div class="input-field col s12 m4">
                   <input id="input_text" type="email">
                   <label for="input_text">Email</label>
@@ -135,24 +137,27 @@
       });
     });
 
-    $(document).ready(function(){
-    $('.scrollspy').scrollSpy({
-      scrollOffset: 0,
-      throttle: 300
+    $(document).ready(function () {
+      $('.scrollspy').scrollSpy({
+        scrollOffset: 0,
+        throttle: 300
+      });
     });
-  });
-     
-  $(document).ready(function(){
-    $('.parallax').parallax();
-  });   
 
-  
-  $(document).ready(function(){
-    $('.materialboxed').materialbox();
-  });
+    $(document).ready(function () {
+      $('.parallax').parallax();
+    });
 
-  
 
+    $(document).ready(function () {
+      $('.materialboxed').materialbox();
+    });
+  </script>
+
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
   </script>
 </body>
+
 </html>
