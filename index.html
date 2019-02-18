@@ -20,15 +20,14 @@
 <body>
 
   <div class="site-wrapper">
-
     <aside class="fixed-panel">
       <div class="fixed-panel__nav" id="navContainer">
-        <img class="logo responsive-img" src="img/logo.png" alt="logo">
-        <div class="nav-item active"><a href="#about" id="#about">About</a></div>
-        <div class="nav-item"><a href="#project1" id="#project1">project1</a></div>
-        <div class="nav-item"><a href="#project2" id="#project2">project2</a></div>
-        <div class="nav-item"><a href="#project3" id="#project3">Contact</a></div>
-        <div class="icons">
+        <img class="logo responsive-img animated bounceInLeft" src="img/logo.png" alt="logo">
+        <div class="nav-item active animated bounceInLeft"><a href="#about" id="#about">About</a></div>
+        <div class="nav-item animated bounceInLeft"><a href="#project1" id="#project1">project1</a></div>
+        <div class="nav-item animated bounceInLeft"><a href="#project2" id="#project2">project2</a></div>
+        <div class="nav-item animated bounceInLeft"><a href="#project3" id="#project3">Contact</a></div>
+        <div class="icons animated bounceInLeft">
           <a class="" href="https://facebook.com">
             <i class="fab fa-facebook"></i>
           </a>
@@ -52,71 +51,100 @@
       </div>
     </aside>
 
-  <div class="content">
-    
-    <section class="about scrollspy" id="about">
-      <div class="about__description animated bounceInUp wow">
-        <h1>Hello I am Chris Stultz</h1>
-        <h5>I am a UX/UI Designer and Frontend Developer</p>
-      </div>
-    </section>
+    <div class="content">
 
-  <section class="company scrollspy animated fadeInRight wow" id="project1">
-      <div class="company__wrapper"> 
-          <div class="company__description">
-              <img class="responsive-img mr2" src="img/365logo.png" alt="365Connect logo">
+      <section class="about scrollspy" id="about">
+        <div class="about__description animated bounceInUp wow">
+          <h1>Hello I am Chris Stultz</h1>
+          <h5>I am a UX/UI Designer and Frontend Developer</p>
+            <a href="#project3" class="btn orange scrollspy center darken-3 pulse z-depth-3" id="#project3">Work with
+              me</a>
+        </div>
+      </section>
+
+      <section class="company scrollspy" id="project1">
+        <div class="company__wrapper">
+          <div class="description animated bounceInLeft wow">
+            <img class="responsive-img" src="img/365logo.png" alt="365Connect logo">
+            <h4>I currently work at the New Orleans based company 365Connect.</h3>
+          </div>
+          <div class="background"><img class="responsive-img" src="img/bg-about.jpg" alt=""></div>
+        </div>
+
+        <div class="company__wrapper">
+          <div class="background"><img class="responsive-img" src="img/bg-about.jpg" alt=""></div>
+          <div class="description animated bounceInLeft wow">
+              <img class="responsive-img" src="img/365logo.png" alt="365Connect logo">
               <h4>I currently work at the New Orleans based company 365Connect.</h3>
           </div>
-            <div class="company__background"></div>
-      </div>
-  </section>
+        </div>
+      </section>
 
-  <section class="project scrollspy" id="project2">
-    <h5>project 2</h5>
-    <p>my name is chris and i eat ass</p>
-    <div class="row">
-      <div class="col s6 l8">
-        <img class="materialboxed responsive-img" src="img/templateimages/cometxd.png">
-      </div>
-      <div class="col s6 l4">
-        <img class="responsive-img" src="img/templateimages/comet.jpg">
-      </div>
-    </div>
-  </section>
+      <section class="graphs scrollspy" id="project1">
+        <div class="company__wrapper">
+          <div class="container">
+            <h1 class="center">Skills</h1>
+            <ul class="graphs stats-container centered">
+              <li class="animated wow" data-provide="circular" data-fill-color="orangered" data-percent="true"
+                data-initial-value="87" data-max-value="89" data-label="Design" style="width: 272px; height: 272px;">
+              </li>
 
-  <section class="project scrollspy" id="project3">
-    <div class="container">
-      <div class="row">
-        <h5>Always looking for web development and design opportunities</h5>
-        <form class="col s8">
-          <div class="row">
-            <div class="input-field col s12 m4">
-              <input id="input_text" type="text">
-              <label for="input_text">Name</label>
-            </div>
-            <div class="input-field col s12 m4">
-              <input id="input_text" type="email">
-              <label for="input_text">Email</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s8">
-              <input id="input_text" type="text">
-              <label for="input_text">Subject</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s8">
-              <textarea id="details" class="materialize-textarea"></textarea>
-              <label for="details">Details</label>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
+              <li class="animated wow" data-provide="circular" data-fill-color="teal" data-percent="true"
+                data-initial-value="3" data-max-value="5" data-label="html/css/js" style="width: 272px; height: 272px;"></li>
 
-  </div> <!-- content -->
+              <li class="animated wow" data-provide="circular" data-fill-color="#69f0ae" data-percent="true"
+                data-initial-value="15" data-max-value="100" data-label="Adobe Suite" style="width: 272px; height: 272px;"></li>
+            </ul>
+          </div>
+      </section>
+
+
+      <section class="project scrollspy" id="project2">
+        <h5>project 2</h5>
+        <p>my name is chris and i eat ass</p>
+        <div class="row animated bounceInUp wow">
+          <div class="col s6 l8">
+            <img class="materialboxed responsive-img" src="img/cometxd.png">
+          </div>
+          <div class="col s6 l4">
+            <img class="responsive-img" src="img/comet.jpg">
+          </div>
+        </div>
+      </section>
+
+      <section class="project scrollspy" id="project3">
+        <div class="container">
+          <div class="row">
+            <h5>Always looking for web development and design opportunities</h5>
+            <form class="col s8">
+              <div class="row">
+                <div class="input-field col s12 m4">
+                  <input id="input_text" type="text">
+                  <label for="input_text">Name</label>
+                </div>
+                <div class="input-field col s12 m4">
+                  <input id="input_text" type="email">
+                  <label for="input_text">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s8">
+                  <input id="input_text" type="text">
+                  <label for="input_text">Subject</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s8">
+                  <textarea id="details" class="materialize-textarea"></textarea>
+                  <label for="details">Details</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div> <!-- content -->
   </div> <!-- Site Wrapper -->
 
 
@@ -139,7 +167,7 @@
     $(document).ready(function () {
       $('.scrollspy').scrollSpy({
         scrollOffset: 0,
-        throttle: 300
+        throttle: 30
       });
     });
 
