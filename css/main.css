@@ -12,12 +12,13 @@ body {
   body p {
     font-size: 1.6rem;
     line-height: 1.4; }
-  body h3 {
+  body h3 h4 {
     line-height: 1.4; }
+  body h4 {
+    line-height: 1.5; }
 
 section {
-  margin: 0;
-  padding: 4rem 0; }
+  margin: 0; }
 
 .site-wrapper {
   display: flex; }
@@ -44,7 +45,7 @@ section {
       bottom: 9rem; }
       .fixed-panel__nav .icons a {
         color: #1a1a1a;
-        font-size: 3rem; }
+        font-size: 2.4rem; }
         .fixed-panel__nav .icons a:not(last-child) {
           margin-right: 1rem; }
     .fixed-panel__nav .nav-item {
@@ -62,13 +63,13 @@ section {
         color: #444;
         transition: .2s ease-out; }
     .fixed-panel__nav .logo {
-      max-width: 100%;
+      max-width: 9%;
       height: auto; }
 
 .content {
   flex: 0 0 80%;
   height: auto; }
-  .content__about {
+  .content .about {
     color: #fff;
     height: 100vh;
     background: url("/img/bg.jpg");
@@ -76,14 +77,31 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
-  .content .description {
-    position: absolute;
-    top: 30vh;
-    left: 50%; }
-  .content__company {
+    .content .about__description {
+      position: absolute;
+      top: 30vh;
+      left: 50%; }
+  .content .company {
     position: relative;
     background-color: #e4e4e4;
-    padding: 8rem 0; }
+    height: 100vh; }
+    .content .company__wrapper {
+      display: flex;
+      align-items: center;
+      flex-flow: row; }
+    .content .company__description {
+      display: flex;
+      flex: 0 0 50%; }
+    .content .company__background {
+      background: url("img/bg-about.jpg");
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 50vh;
+      flex-basis: 50%;
+      flex-grow: 2;
+      background: orangered; }
 
 .input-field > label {
   color: #9e9e9e;
