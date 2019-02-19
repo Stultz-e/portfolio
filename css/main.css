@@ -16,6 +16,8 @@ body {
     line-height: 1.4; }
   body h4 {
     line-height: 1.5; }
+  body .btn {
+    text-transform: none; }
 
 section {
   margin: 0; }
@@ -97,22 +99,43 @@ section {
     overflow: hidden; }
     .content .company__wrapper {
       display: flex;
-      align-items: center;
       flex-flow: row;
-      overflow: hidden; }
+      overflow: hidden;
+      align-items: center; }
     .content .company .description {
       display: flex;
       flex-flow: column nowrap;
-      align-items: center;
-      padding-left: 2rem;
       flex: 0 0 50%;
-      overflow: hidden; }
-    .content .company .background {
-      height: 59vh;
-      flex-basis: 50%; }
+      margin-bottom: 5rem;
+      padding-right: 1rem; }
+      .content .company .description h2 {
+        margin-bottom: 0; }
+      .content .company .description li {
+        font-size: 1.6rem; }
+        .content .company .description li span {
+          color: orangered;
+          font-size: 1.8rem; }
+    .content .company .school-background,
+    .content .company .work-background {
+      height: 50vh;
+      flex-basis: 50%;
+      position: relative; }
+      .content .company .school-background:after,
+      .content .company .work-background:after {
+        content: "";
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh; }
 
-.graphs {
+.project {
   padding: 8rem 0; }
+  .project__wrapper {
+    display: flex; }
 
 .input-field > label {
   color: #9e9e9e;
@@ -145,86 +168,19 @@ textarea {
 
 @media only screen and (min-width: 1201px) {
   html {
-    font-size: 70%; } }
+    font-size: 65%; } }
+
+.mb2 {
+  margin-bottom: 4rem; }
 
 .mr2 {
   margin-right: 4rem; }
 
-/* #Canvas Element Circular charts
-================================================== */
-canvas, video {
-  display: inline-block; }
+.ml4 {
+  margin-left: 6rem; }
 
-.stats-container {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  padding-bottom: 70px; }
+.pl2 {
+  padding-left: 2rem; }
 
-.stats-container li {
-  display: inline-block;
-  margin: 0 4% 5px;
-  position: relative; }
-
-.circular-stat {
-  position: relative; }
-
-.circular-stat .digit-label {
-  color: #444;
-  font-size: 3.2em;
-  text-align: center;
-  display: inline-block;
-  position: absolute;
-  top: 11.5%;
-  width: 75%;
-  left: 12.5%;
-  padding: 30px 0 0 30px;
-  text-shadow: -1px 1px 0px #fff;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.circular-stat .text-label {
-  color: #333;
-  font-size: 1.5em;
-  top: 50%;
-  left: 21.875%;
-  width: 56.25%;
-  padding-top: 6px;
-  display: inline-block;
-  position: absolute;
-  text-align: center;
-  border-top: 1px solid #999; }
-
-span.text-title {
-  color: #444;
-  text-align: center;
-  letter-spacing: -1px;
-  text-shadow: -1px 1px 0px #FFF;
-  padding: 30px 10px 0 0px;
-  margin-top: 240px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  z-index: 99999;
-  display: block;
-  text-shadow: -1px 1px 0px #fff; }
-
-span.text-dates {
-  font-size: 1.5em;
-  font-family: "Noto Sans", "Helvetica Neue", Helvetica, arial, sans-serif;
-  color: #999;
-  text-shadow: -1px 1px 0px #fff; }
-
-@media only screen and (min-width: 1010px) {
-  .stats-container li {
-    margin: 0 2% 5px; } }
-
-@media only screen and (max-width: 1009px) {
-  .stats-container li {
-    margin: 0 -.2em 5px; } }
+.pl4 {
+  padding-left: 6rem; }

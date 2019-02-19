@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>Chris Stultz Portfolio</title>
+  <title>Chris Stultz UX Portfolio</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
@@ -14,7 +14,6 @@
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection" />
-
 </head>
 
 <body>
@@ -27,6 +26,8 @@
         <div class="nav-item animated bounceInLeft"><a href="#project1" id="#project1">project1</a></div>
         <div class="nav-item animated bounceInLeft"><a href="#project2" id="#project2">project2</a></div>
         <div class="nav-item animated bounceInLeft"><a href="#project3" id="#project3">Contact</a></div>
+        <div class="nav-item animated bounceInLeft"><a href="#project3" id="#project3">Resume</a></div>
+
         <div class="icons animated bounceInLeft">
           <a class="" href="https://facebook.com">
             <i class="fab fa-facebook"></i>
@@ -52,7 +53,6 @@
     </aside>
 
     <div class="content">
-
       <section class="about scrollspy" id="about">
         <div class="about__description animated bounceInUp wow">
           <h1>Hello I am Chris Stultz</h1>
@@ -64,45 +64,28 @@
 
       <section class="company scrollspy" id="project1">
         <div class="company__wrapper">
-          <div class="description animated bounceInLeft wow">
-            <img class="responsive-img" src="img/365logo.png" alt="365Connect logo">
-            <h4>I currently work at the New Orleans based company 365Connect.</h3>
-          </div>
-          <div class="background"><img class="responsive-img" src="img/bg-about.jpg" alt=""></div>
-        </div>
-
-        <div class="company__wrapper">
-          <div class="background"><img class="responsive-img" src="img/bg-about.jpg" alt=""></div>
-          <div class="description animated bounceInLeft wow">
-              <img class="responsive-img" src="img/365logo.png" alt="365Connect logo">
-              <h4>I currently work at the New Orleans based company 365Connect.</h3>
-          </div>
-        </div>
-      </section>
-
-      <section class="graphs scrollspy" id="project1">
-        <div class="company__wrapper">
-          <div class="container">
-            <h1 class="center">Skills</h1>
-            <ul class="graphs stats-container centered">
-              <li class="animated wow" data-provide="circular" data-fill-color="orangered" data-percent="true"
-                data-initial-value="87" data-max-value="89" data-label="Design" style="width: 272px; height: 272px;">
-              </li>
-
-              <li class="animated wow" data-provide="circular" data-fill-color="teal" data-percent="true"
-                data-initial-value="3" data-max-value="5" data-label="html/css/js" style="width: 272px; height: 272px;"></li>
-
-              <li class="animated wow" data-provide="circular" data-fill-color="#69f0ae" data-percent="true"
-                data-initial-value="15" data-max-value="100" data-label="Adobe Suite" style="width: 272px; height: 272px;"></li>
+          <div class="description animated bounceInLeft wow pl2">
+            <h2>Education</h2>
+            <ul>
+              <li> <span> Psychology - BA </span> - State University of New York College at Oswego </li>
+              <li> <span> Human Computer Interaction -MA </span> - State University of New York College at Oswego</li>
             </ul>
           </div>
+          <div class="school-background animated bounceInRight wow" style="background-image:url('img/sunyoswego.jpg');"></div>
+        </div>
+
+        <div class="company__wrapper">
+          <div class="work-background animated bounceInLeft wow" style="background-image:url('img/bg-about.jpg');"></div>
+          <div class="description animated bounceInRight wow pl4">
+              <h2>Work</h2>
+              <p>I currently work as a UX designer at 365Connect</p>
+          </div>
+        </div>
       </section>
 
-
       <section class="project scrollspy" id="project2">
-        <h5>project 2</h5>
-        <p>my name is chris and i eat ass</p>
-        <div class="row animated bounceInUp wow">
+        <h2 class="center mb2">Projects</h2>
+        <div class="row animated fadeIn wow">
           <div class="col s6 l8">
             <img class="materialboxed responsive-img" src="img/cometxd.png">
           </div>
@@ -153,6 +136,8 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
+  <script src="js/wow.min.js"></script>
+
   <!--<script src="js/init.js"></script>-->
   <script>
     $(document).ready(function () {
@@ -162,27 +147,34 @@
         transition: 500,
         interval: 6000
       });
+      $('.scrollspy').scrollSpy();
+      $('.parallax').parallax();
+      $('.materialboxed').materialbox();
+      $('.sidenav').sidenav();
     });
 
     $(document).ready(function () {
-      $('.scrollspy').scrollSpy({
-        scrollOffset: 0,
-        throttle: 30
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+          // Store hash
+          var hash = this.hash;
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
       });
     });
 
-    $(document).ready(function () {
-      $('.parallax').parallax();
-    });
-
-
-    $(document).ready(function () {
-      $('.materialboxed').materialbox();
-    });
-  </script>
-
-  <script src="js/wow.min.js"></script>
-  <script>
     new WOW().init();
   </script>
 </body>
