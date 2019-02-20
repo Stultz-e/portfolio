@@ -1,3 +1,34 @@
+//margin
+
+.mtzero {
+    margin-top: 0 !important;
+}
+
+.mt1 {
+    margin-top: 1rem;
+}
+
+.mt2 {
+    margin-top: 2rem !important;
+}
+
+.mt3 {
+    margin-top: 3rem;
+}
+
+.mt4 {
+    margin-top: 4rem;
+}
+
+.mt5 {
+    margin-top: 5rem;
+}
+
+
+.mbzero {
+    margin-bottom: 0 !important;
+}
+
 .mb2 {
     margin-bottom: 4rem;
 }
@@ -8,9 +39,14 @@
     margin-right: 4rem;
 }
 
+
+
+
 .ml4 {
     margin-left: 6rem;
 }
+
+// padding 
 
 .pl2 {
     padding-left: 2rem;

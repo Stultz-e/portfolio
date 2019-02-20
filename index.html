@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
   <div class="site-wrapper">
     <aside class="fixed-panel">
       <div class="fixed-panel__nav" id="navContainer">
@@ -52,9 +51,41 @@
       </div>
     </aside>
 
-    <div class="content">
+    <div class="content">    
       <section class="about scrollspy" id="about">
-        <div class="about__description animated bounceInUp wow">
+          <a href="#" data-activates="side-nav" class="button-collapse show-on-large btn-mobile white-text">
+              <i class="material-icons">menu</i>
+            </a>
+                  <!-- Side nav -->
+                  <ul id="side-nav" class="side-nav">
+                    <li>
+                      <div class="user-view">
+                        <div class="background"><img src="img/ocean.jpg" alt="" /></div>
+                        <a href="#">
+                          <img src="img/person1.jpg" alt="" class="circle" />
+                        </a>
+                        <a href="#"> <span class="name white-text">John Doe</span> </a>
+                        <a href="#">
+                          <span class="email white-text">jdoe@gmail.com</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="index.html">
+                        <i class="material-icons">dashboard</i> Dashboard</a>
+                    </li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="comments.html">Comments</a></li>
+                    <li><a href="users.html">Users</a></li>
+                    <li>
+                      <div class="divider"></div>
+                    </li>
+                    <li><a class="subheader">Account Controls</a></li>
+                    <li><a href="login.html" class="waves-effect">Logout</a></li>
+                  </ul>
+
+        <div class="about__description animated bounceInUp wow">         
           <h1>Hello I am Chris Stultz</h1>
           <h5>I am a UX/UI Designer and Frontend Developer</p>
             <a href="#project3" class="btn orange scrollspy center darken-3 pulse z-depth-3" id="#project3">Work with
@@ -67,10 +98,12 @@
           <div class="description animated bounceInLeft wow pl2">
             <h2>Education</h2>
             <ul>
-              <li> <span> Psychology - BA </span> - State University of New York College at Oswego </li>
-              <li> <span> Human Computer Interaction -MA </span> - State University of New York College at Oswego</li>
+              <li class="mt1 mbzero"><span> Psychology - BA </span> - State University of New York College at Oswego </li>
+              <li><span> Human Computer Interaction - MA </span> - State University of New York College at Oswego</li>
+              <li>My academic background can be summarized as: <i><b>the study of people and how they use stuff</b></i></li>
+              <a href="#project3" class="waves-effect waves-light btn-small mt2" id="#project3">Usability Projects</a>
             </ul>
-          </div>
+          </div>     
           <div class="school-background animated bounceInRight wow" style="background-image:url('img/sunyoswego.jpg');"></div>
         </div>
 
@@ -78,7 +111,12 @@
           <div class="work-background animated bounceInLeft wow" style="background-image:url('img/bg-about.jpg');"></div>
           <div class="description animated bounceInRight wow pl4">
               <h2>Work</h2>
-              <p>I currently work as a UX designer at 365Connect</p>
+              <ul class="description__role">
+                <li>365connect is a highly complex software as a service for the multifamily housing industry.</li>
+                <li>As the sole designer I collaborate with our CEO translating design and business requirements into code.</li>
+                <li>Most designs are templates or components that need to be interchangable across different code bases. I use <span>Adobe XD</span>
+                 for prototyping and  </li>
+              </ul>
           </div>
         </div>
       </section>
@@ -147,10 +185,10 @@
         transition: 500,
         interval: 6000
       });
+      $(".button-collapse").sideNav();
       $('.scrollspy').scrollSpy();
       $('.parallax').parallax();
       $('.materialboxed').materialbox();
-      $('.sidenav').sidenav();
     });
 
     $(document).ready(function () {
@@ -174,6 +212,7 @@
         } // End if
       });
     });
+
 
     new WOW().init();
   </script>

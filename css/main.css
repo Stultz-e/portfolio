@@ -5,19 +5,33 @@ html,
 body {
   height: 100%; }
 
+p {
+  font-size: 1.6rem;
+  line-height: 1.4; }
+
+h1 {
+  font-size: 4.2rem; }
+  @media small-and-down {
+    h1 {
+      font-size: 2rem; } }
+
+h3 h4 {
+  line-height: 1.4; }
+
+h4 {
+  line-height: 1.5; }
+
 body {
   color: #444;
   background: #e6e6e6;
   font-family: 'Exo 2', sans-serif; }
-  body p {
-    font-size: 1.6rem;
-    line-height: 1.4; }
-  body h3 h4 {
-    line-height: 1.4; }
-  body h4 {
-    line-height: 1.5; }
-  body .btn {
+  body .btn,
+  body .btn-small {
     text-transform: none; }
+  body .btn-mobile {
+    position: fixed;
+    right: 5rem;
+    top: 3rem; }
 
 section {
   margin: 0; }
@@ -32,6 +46,9 @@ section {
   flex: 0 0 20%;
   position: relative;
   overflow: hidden; }
+  @media only screen and (max-width: 992px) {
+    .fixed-panel {
+      display: none; } }
   .fixed-panel__nav {
     position: fixed;
     display: flex;
@@ -72,6 +89,9 @@ section {
 .content {
   flex: 0 0 80%;
   height: auto; }
+  @media only screen and (max-width: 992px) {
+    .content {
+      flex: 1 1; } }
   .content .about {
     color: #fff;
     height: 100vh;
@@ -81,14 +101,24 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden; }
+    @media only screen and (max-width: 600px) {
+      .content .about {
+        background-position: center center; } }
     .content .about__description {
       position: absolute;
       top: 30vh;
       left: 50%; }
+      @media only screen and (max-width: 992px) {
+        .content .about__description {
+          top: 40vh;
+          transform: translate(-50%, -50%); } }
       .content .about__description a {
         position: absolute;
         margin-top: 2rem;
         left: 30%; }
+        @media only screen and (max-width: 600px) {
+          .content .about__description a {
+            left: 0; } }
     .content .about .purpose {
       margin-top: 10vh;
       font-size: 1.4rem; }
@@ -106,15 +136,16 @@ section {
       display: flex;
       flex-flow: column nowrap;
       flex: 0 0 50%;
-      margin-bottom: 5rem;
       padding-right: 1rem; }
       .content .company .description h2 {
         margin-bottom: 0; }
       .content .company .description li {
         font-size: 1.6rem; }
         .content .company .description li span {
-          color: orangered;
+          color: #2bbbad;
           font-size: 1.8rem; }
+      .content .company .description li {
+        margin-bottom: 1rem; }
     .content .company .school-background,
     .content .company .work-background {
       height: 50vh;
@@ -169,6 +200,27 @@ textarea {
 @media only screen and (min-width: 1201px) {
   html {
     font-size: 65%; } }
+
+.mtzero {
+  margin-top: 0 !important; }
+
+.mt1 {
+  margin-top: 1rem; }
+
+.mt2 {
+  margin-top: 2rem !important; }
+
+.mt3 {
+  margin-top: 3rem; }
+
+.mt4 {
+  margin-top: 4rem; }
+
+.mt5 {
+  margin-top: 5rem; }
+
+.mbzero {
+  margin-bottom: 0 !important; }
 
 .mb2 {
   margin-bottom: 4rem; }
