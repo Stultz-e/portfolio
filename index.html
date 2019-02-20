@@ -178,13 +178,9 @@
 
   <!--<script src="js/init.js"></script>-->
   <script>
+      new WOW().init();
+
     $(document).ready(function () {
-      $('.slider').slider({
-        indicators: false,
-        height: 500,
-        transition: 500,
-        interval: 6000
-      });
       $(".button-collapse").sideNav();
       $('.scrollspy').scrollSpy();
       $('.parallax').parallax();
@@ -213,8 +209,6 @@
       });
     });
 
-
-    new WOW().init();
   </script>
 </body>
 
