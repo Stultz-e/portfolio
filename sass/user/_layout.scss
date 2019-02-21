@@ -56,7 +56,7 @@ h4 {
 
 body {
   color: #444;
-  background: #e6e6e6;
+  background: #f6f6f6;
   font-family: 'Exo 2', sans-serif;
 
   .btn,
@@ -83,9 +83,10 @@ section {
   display: flex;
   align-items: center;
   flex-flow: column nowrap;
-  flex: 0 0 20%;
+  flex: 0 0 15%;
   position: relative;
   overflow: hidden;
+  background-color: #fbfbfb;
 
   @media #{$medium-and-down} {
     display: none;
@@ -95,10 +96,11 @@ section {
     position: fixed;
     display: flex;
     flex-flow: column nowrap;
-    top: 35%;
+    top: 25%;
     justify-content: space-between;
     align-items: center;
-    height: 35vh;
+    height: 30vh;
+    text-align: center;
 
     .logo {
       position: fixed;
@@ -111,7 +113,7 @@ section {
   
         a {
           color: #1a1a1a;
-          font-size: 2.4rem;  
+          font-size: 2rem;  
 
           &:not(last-child) {
             margin-right: 1rem;
@@ -121,12 +123,12 @@ section {
     
     .nav-item {
       color: #444;
-      font-size: 2.4rem;
+      font-size: 2rem;
       width: 100%;
       position: relative;
 
       .active {
-        border-bottom: 3px solid orangered;
+        border-bottom: 3px solid #ef6c00;
         transform: scale(1.1);
         transition: .2s ease-in;
       }
@@ -140,14 +142,14 @@ section {
     }
 
     .logo {
-      max-width: 9%;
       height: auto;
+      max-width: 220px;
     }
   }
 }
 
 .content {
-  flex: 0 0 80%;
+  flex: 0 0 85%;
   height: auto;
 
   @media #{$medium-and-down} {
@@ -155,34 +157,28 @@ section {
   }
 
   .about {
-    color: #fff;
-    height: 105vh;
+    height: 100vh;
     background: url('/img/bg.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
 
     @media #{$small-and-down} {
       background-position: center center;
     }
 
     &__description {
-      @include absCenter;
-      @media #{$medium-and-down} {
-        top: 40vh;
-        transform: translate(-50%, -50%);
-      }
-
+      text-align: center;
+      margin-top: -15vh;;
       a {
-      position: absolute;
-      margin-top: 2rem;
-      left: 30%;
-
-        @media #{$small-and-down} {
-          left: 0;
-        }
+      margin-top: 2.5rem;
       }
     }
 
@@ -194,7 +190,6 @@ section {
   
   .company {
     position: relative;
-    background-color: #e4e4e4;
     height: auto;
     overflow: hidden;
 
@@ -219,7 +214,7 @@ section {
       li {
         font-size: 1.6rem;
         span {
-          color: #2bbbad;
+          font-weight: 500;
           font-size: 1.8rem;
         }
       }

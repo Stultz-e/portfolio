@@ -23,7 +23,7 @@ h4 {
 
 body {
   color: #444;
-  background: #e6e6e6;
+  background: #f6f6f6;
   font-family: 'Exo 2', sans-serif; }
   body .btn,
   body .btn-small {
@@ -43,9 +43,10 @@ section {
   display: flex;
   align-items: center;
   flex-flow: column nowrap;
-  flex: 0 0 20%;
+  flex: 0 0 15%;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #fbfbfb; }
   @media only screen and (max-width: 992px) {
     .fixed-panel {
       display: none; } }
@@ -53,10 +54,11 @@ section {
     position: fixed;
     display: flex;
     flex-flow: column nowrap;
-    top: 35%;
+    top: 25%;
     justify-content: space-between;
     align-items: center;
-    height: 35vh; }
+    height: 30vh;
+    text-align: center; }
     .fixed-panel__nav .logo {
       position: fixed;
       top: 10vh; }
@@ -65,16 +67,16 @@ section {
       bottom: 9rem; }
       .fixed-panel__nav .icons a {
         color: #1a1a1a;
-        font-size: 2.4rem; }
+        font-size: 2rem; }
         .fixed-panel__nav .icons a:not(last-child) {
           margin-right: 1rem; }
     .fixed-panel__nav .nav-item {
       color: #444;
-      font-size: 2.4rem;
+      font-size: 2rem;
       width: 100%;
       position: relative; }
       .fixed-panel__nav .nav-item .active {
-        border-bottom: 3px solid orangered;
+        border-bottom: 3px solid #ef6c00;
         transform: scale(1.1);
         transition: .2s ease-in; }
       .fixed-panel__nav .nav-item a {
@@ -83,48 +85,40 @@ section {
         color: #444;
         transition: .2s ease-out; }
     .fixed-panel__nav .logo {
-      max-width: 9%;
-      height: auto; }
+      height: auto;
+      max-width: 220px; }
 
 .content {
-  flex: 0 0 80%;
+  flex: 0 0 85%;
   height: auto; }
   @media only screen and (max-width: 992px) {
     .content {
       flex: 1 1; } }
   .content .about {
-    color: #fff;
-    height: 105vh;
+    height: 100vh;
     background: url("/img/bg.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden; }
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     @media only screen and (max-width: 600px) {
       .content .about {
         background-position: center center; } }
     .content .about__description {
-      position: absolute;
-      top: 30vh;
-      left: 50%; }
-      @media only screen and (max-width: 992px) {
-        .content .about__description {
-          top: 40vh;
-          transform: translate(-50%, -50%); } }
+      text-align: center;
+      margin-top: -15vh; }
       .content .about__description a {
-        position: absolute;
-        margin-top: 2rem;
-        left: 30%; }
-        @media only screen and (max-width: 600px) {
-          .content .about__description a {
-            left: 0; } }
+        margin-top: 2.5rem; }
     .content .about .purpose {
       margin-top: 10vh;
       font-size: 1.4rem; }
   .content .company {
     position: relative;
-    background-color: #e4e4e4;
     height: auto;
     overflow: hidden; }
     .content .company__wrapper {
@@ -142,7 +136,7 @@ section {
       .content .company .description li {
         font-size: 1.6rem; }
         .content .company .description li span {
-          color: #2bbbad;
+          font-weight: 500;
           font-size: 1.8rem; }
       .content .company .description li {
         margin-bottom: 1rem; }
