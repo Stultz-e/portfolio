@@ -86,7 +86,7 @@ section {
         transition: .2s ease-out; }
     .fixed-panel__nav .logo {
       height: auto;
-      max-width: 220px; }
+      width: 13%; }
 
 .content {
   flex: 0 0 85%;
@@ -129,8 +129,7 @@ section {
     .content .company .description {
       display: flex;
       flex-flow: column nowrap;
-      flex: 0 0 50%;
-      padding-right: 1rem; }
+      flex: 0 0 50%; }
       .content .company .description h2 {
         margin-bottom: 0; }
       .content .company .description li {
@@ -228,5 +227,14 @@ textarea {
 .pl2 {
   padding-left: 2rem; }
 
+.pl3 {
+  padding-left: 3rem; }
+
+.pr4 {
+  padding-right: 4rem; }
+
 .pl4 {
   padding-left: 6rem; }
+
+.prl4 {
+  padding: 0 4rem; }
