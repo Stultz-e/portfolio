@@ -33,6 +33,10 @@ body {
     right: 5rem;
     top: 3rem; }
 
+#gif_animata {
+  width: 73%;
+  margin-bottom: 4vh; }
+
 section {
   margin: 0; }
 
@@ -43,10 +47,10 @@ section {
   display: flex;
   align-items: center;
   flex-flow: column nowrap;
-  flex: 0 0 15%;
+  flex: 0 0 20%;
   position: relative;
   overflow: hidden;
-  background-color: #fbfbfb; }
+  background-color: #fff; }
   @media only screen and (max-width: 992px) {
     .fixed-panel {
       display: none; } }
@@ -54,10 +58,10 @@ section {
     position: fixed;
     display: flex;
     flex-flow: column nowrap;
-    top: 25%;
+    top: 15%;
     justify-content: space-between;
     align-items: center;
-    height: 30vh;
+    height: 40vh;
     text-align: center; }
     .fixed-panel__nav .logo {
       position: fixed;
@@ -84,12 +88,9 @@ section {
         left: 0;
         color: #444;
         transition: .2s ease-out; }
-    .fixed-panel__nav .logo {
-      height: auto;
-      width: 13%; }
 
 .content {
-  flex: 0 0 85%;
+  flex: 0 0 80%;
   height: auto; }
   @media only screen and (max-width: 992px) {
     .content {

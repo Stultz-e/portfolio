@@ -179,12 +179,12 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
   <script src="js/wow.min.js"></script>
-  <script src="js/lottie.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.4/lottie.min.js"></script>
   <!--<script src="js/init.js"></script>-->
   <script>
     new WOW().init();
 
-        var animation = bodymovin.loadAnimation({
+        var animation = lottie.loadAnimation({
           container: document.getElementById('gif_animata'),
           renderer:'svg',
           autoplay: true,
@@ -221,9 +221,7 @@
       });
     });
 
-    var gifSource = $('#gif_animata').attr('src'); //get the source in the var
-    $('#gif_animata').attr('src', ""); //erase the source     
-    $('#gif_animata').attr('src', gifSource + "?" + new Date().getTime()); //add the date to the source of the image... :-)
+   
   </script>
 
   </script>
