@@ -30,7 +30,7 @@
           <a href="#">
             <span class="email white-text">jdoe@gmail.com</span>
           </a>
-        </div>
+        </div>  
       </li>
       <li>
         <a href="index.html">
@@ -48,7 +48,8 @@
     </ul>
     <aside class="fixed-panel">
       <div class="fixed-panel__nav" id="navContainer">
-        <img class="logo responsive-img animated bounceInLeft" id="gif_animata" src="img/chrisux.gif" alt="logo">
+        <div class="animated bounceInLeft" id="gif_animata"></div>
+
         <div class="nav-item active animated bounceInLeft"><a href="#about" id="#about">About</a></div>
         <div class="nav-item animated bounceInLeft"><a href="#project1" id="#project1">project1</a></div>
         <div class="nav-item animated bounceInLeft"><a href="#project2" id="#project2">project2</a></div>
@@ -182,6 +183,14 @@
   <!--<script src="js/init.js"></script>-->
   <script>
     new WOW().init();
+
+        var animation = bodymovin.loadAnimation({
+          container: document.getElementById('gif_animata'),
+          renderer:'svg',
+          autoplay: true,
+          path: 'data.json'
+      })
+
 
     $(document).ready(function () {
       $(".button-collapse").sideNav();
