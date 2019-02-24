@@ -91,7 +91,7 @@ section {
   flex: 0 0 20%;
   position: relative;
   overflow: hidden;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.90);
 
   @media #{$medium-and-down} {
     display: none;
@@ -104,7 +104,7 @@ section {
     top: 15%;
     justify-content: space-between;
     align-items: center;
-    height: 40vh;
+    height: 50%;
     text-align: center;
 
     .logo {
@@ -117,7 +117,7 @@ section {
         bottom: 9rem;
   
         a {
-          color: #1a1a1a;
+          color: rgba(255, 255, 255, 0.6);
           font-size: 2rem;  
 
           &:not(last-child) {
@@ -127,7 +127,7 @@ section {
       }
     
     .nav-item {
-      color: #444;
+      color:rgba(255, 255, 255, 0.6);
       font-size: 2rem;
       width: 100%;
       position: relative;
@@ -141,7 +141,7 @@ section {
       a {
         top: 0;
         left: 0;
-        color: #444;
+        color:rgba(255, 255, 255, 0.6);
         transition: .2s ease-out;
       }
     }
@@ -204,7 +204,6 @@ section {
       display: flex;
       flex-flow: column nowrap;
       flex: 0 0 50%;
-
 
       h2 {
         margin-bottom: 0;
