@@ -1,22 +1,39 @@
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-y: auto;
+  background-color: transparent; }
 
 html,
 body {
   height: 100%; }
 
-body::-webkit-scrollbar {
-  width: 2rem; }
+::-webkit-scrollbar {
+  width: 10px; }
 
-body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 2px black; }
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  display: block;
+  background-color: transparent;
+  height: 0; }
 
-body::-webkit-scrollbar-thumb {
-  background: linear-gradient(#ef6c00, #ffbb00); }
+::-webkit-scrollbar-track-piece {
+  background-color: #222; }
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 30px; }
+
+::-webkit-scrollbar-track {
+  width: 200px; }
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#ef6c00, #ff922b); }
 
 p {
   font-size: 1.6rem;
   line-height: 1.4; }
+
+.title {
+  margin: 0; }
 
 h1 {
   font-size: 4.2rem; }
@@ -24,7 +41,7 @@ h1 {
     h1 {
       font-size: 2rem; } }
 
-h3 h4 {
+h3 {
   line-height: 1.4; }
 
 h4 {
@@ -32,7 +49,7 @@ h4 {
 
 body {
   color: #444;
-  background: #f6f6f6;
+  background: #e6e6e6;
   font-family: 'Exo 2', sans-serif; }
   body .btn,
   body .btn-small {
@@ -40,7 +57,8 @@ body {
   body .btn-mobile {
     position: fixed;
     right: 5rem;
-    top: 3rem; }
+    top: 3rem;
+    z-index: 1; }
 
 #gif_animata {
   width: 70%;
@@ -59,7 +77,7 @@ section {
   flex: 0 0 20%;
   position: relative;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.87); }
+  background-color: rgba(0, 0, 0, 0.9); }
   @media only screen and (max-width: 992px) {
     .fixed-panel {
       display: none; } }
@@ -70,7 +88,7 @@ section {
     top: 15%;
     justify-content: space-between;
     align-items: center;
-    height: 40vh;
+    height: 50%;
     text-align: center; }
     .fixed-panel__nav .logo {
       position: fixed;
@@ -79,11 +97,12 @@ section {
       position: fixed;
       bottom: 9rem; }
       .fixed-panel__nav .icons a {
-        color: #fff;
+        color: rgba(255, 255, 255, 0.6);
         font-size: 2rem; }
         .fixed-panel__nav .icons a:not(last-child) {
           margin-right: 1rem; }
     .fixed-panel__nav .nav-item {
+      color: rgba(255, 255, 255, 0.8);
       font-size: 2rem;
       width: 100%;
       position: relative; }
@@ -94,7 +113,7 @@ section {
       .fixed-panel__nav .nav-item a {
         top: 0;
         left: 0;
-        color: #fff;
+        color: rgba(255, 255, 255, 0.8);
         transition: .2s ease-out; }
         .fixed-panel__nav .nav-item a:hover {
           transform: scale(1.3); }
@@ -106,7 +125,7 @@ section {
     .content {
       flex: 1 1; } }
   .content .about {
-    height: 100vh;
+    height: 102vh;
     background: url("/img/bg.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -121,8 +140,8 @@ section {
       .content .about {
         background-position: center center; } }
     .content .about__description {
-      text-align: center;
-      margin-top: -15vh; }
+      margin-top: -15vh;
+      margin-left: 2rem; }
       .content .about__description a {
         margin-top: 2.5rem; }
     .content .about .purpose {
@@ -135,12 +154,18 @@ section {
     .content .company__wrapper {
       display: flex;
       flex-flow: row;
-      overflow: hidden;
       align-items: center; }
+      @media only screen and (max-width: 992px) {
+        .content .company__wrapper {
+          background-color: rgba(0, 0, 0, 0.4); } }
     .content .company .description {
       display: flex;
       flex-flow: column nowrap;
       flex: 0 0 50%; }
+      @media only screen and (max-width: 992px) {
+        .content .company .description {
+          position: absolute;
+          color: #fff; } }
       .content .company .description h2 {
         margin-bottom: 0; }
       .content .company .description li {
@@ -153,19 +178,17 @@ section {
     .content .company .school-background,
     .content .company .work-background {
       height: 50vh;
+      width: 100%;
       flex-basis: 50%;
-      position: relative; }
-      .content .company .school-background::after,
-      .content .company .work-background::after {
-        content: "";
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 50vh; }
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1; }
+      @media only screen and (max-width: 992px) {
+        .content .company .school-background,
+        .content .company .work-background {
+          flex-basis: 100%; } }
 
 .project {
   padding: 8rem 0; }
@@ -189,9 +212,17 @@ textarea {
   font-size: 1.4rem;
   height: 4rem !important; }
 
+.skills {
+  height: 30vh;
+  background-color: #171717;
+  display: flex;
+  justify-content: center; }
+  .skills h2 {
+    color: #fff; }
+
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 50%; } }
+    font-size: 40%; } }
 
 @media only screen and (min-width: 601px) {
   html {
@@ -203,49 +234,88 @@ textarea {
 
 @media only screen and (min-width: 1201px) {
   html {
-    font-size: 65%; } }
+    font-size: 62.5%; } }
 
 .mtzero {
   margin-top: 0 !important; }
 
 .mt1 {
   margin-top: 1rem; }
+  @media only screen and (max-width: 600px) {
+    .mt1 {
+      margin-top: 0; } }
 
 .mt2 {
   margin-top: 2rem !important; }
+  @media only screen and (max-width: 600px) {
+    .mt2 {
+      margin-top: 0; } }
 
 .mt3 {
   margin-top: 3rem; }
+  @media only screen and (max-width: 600px) {
+    .mt3 {
+      margin-top: 0; } }
 
 .mt4 {
   margin-top: 4rem; }
+  @media only screen and (max-width: 600px) {
+    .mt4 {
+      margin-top: 0; } }
 
 .mt5 {
   margin-top: 5rem; }
+  @media only screen and (max-width: 600px) {
+    .mt5 {
+      margin-top: 0; } }
 
 .mbzero {
   margin-bottom: 0 !important; }
 
 .mb2 {
   margin-bottom: 4rem; }
+  @media only screen and (max-width: 600px) {
+    .mb2 {
+      margin-bottom: 0; } }
 
 .mr2 {
   margin-right: 4rem; }
+  @media only screen and (max-width: 600px) {
+    .mr2 {
+      margin-right: 0; } }
 
 .ml4 {
   margin-left: 6rem; }
+  @media only screen and (max-width: 600px) {
+    .ml4 {
+      margin-left: 0; } }
 
 .pl2 {
   padding-left: 2rem; }
+  @media only screen and (max-width: 600px) {
+    .pl2 {
+      margin-left: 0; } }
 
 .pl3 {
   padding-left: 3rem; }
+  @media only screen and (max-width: 600px) {
+    .pl3 {
+      padding-left: 2rem; } }
 
 .pr4 {
   padding-right: 4rem; }
+  @media only screen and (max-width: 600px) {
+    .pr4 {
+      padding-right: 0; } }
 
 .pl4 {
   padding-left: 6rem; }
+  @media only screen and (max-width: 600px) {
+    .pl4 {
+      padding-left: 2rem; } }
 
 .prl4 {
   padding: 0 4rem; }
+  @media only screen and (max-width: 600px) {
+    .prl4 {
+      padding: 0rem; } }
