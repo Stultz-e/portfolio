@@ -15,7 +15,7 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 
 @media #{$small-and-down} {
    html {
-       font-size: 50%;
+       font-size: 40%;
    }
   }
   @media #{$medium-and-up} {
@@ -33,6 +33,6 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
   }
   @media #{$extra-large-and-up} {
     html {
-        font-size: 65%;
+      font-size: 62.5%;
     }
   }
