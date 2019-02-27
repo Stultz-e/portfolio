@@ -189,6 +189,18 @@ section {
         .content .company .school-background,
         .content .company .work-background {
           flex-basis: 100%; } }
+    .content .company .video-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+      .content .company .video-wrapper .video {
+        object-fit: cover;
+        overflow: hidden;
+        width: 100%;
+        height: 100%; }
 
 .project {
   padding: 8rem 0; }
