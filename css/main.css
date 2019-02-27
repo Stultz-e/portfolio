@@ -225,12 +225,25 @@ textarea {
   height: 4rem !important; }
 
 .skills {
-  height: 30vh;
-  background-color: #171717;
-  display: flex;
-  justify-content: center; }
-  .skills h2 {
+  padding: 15vh 4rem;
+  background-color: #171717; }
+  .skills h2, .skills ul {
+    padding-left: 4rem; }
+  .skills h2,
+  .skills li {
     color: #fff; }
+  .skills li {
+    font-size: 1.6rem;
+    position: relative; }
+    .skills li::before {
+      position: absolute;
+      background: orangered;
+      height: 8px;
+      width: 8px;
+      border-radius: 100%;
+      content: "";
+      left: -20px;
+      transform: translateY(10px); }
 
 @media only screen and (max-width: 600px) {
   html {
@@ -294,7 +307,7 @@ textarea {
   margin-right: 4rem; }
   @media only screen and (max-width: 600px) {
     .mr2 {
-      margin-right: 0; } }
+      margin-right: 2rem; } }
 
 .ml4 {
   margin-left: 6rem; }

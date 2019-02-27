@@ -338,14 +338,31 @@ textarea {
 }
 
 .skills {
-  height: 30vh;
+  padding: 15vh 4rem; 
   background-color: #171717;
-  display: flex;
-  justify-content: center;
 
+  h2, ul {
+    padding-left: 4rem;
+  }
 
-  h2 {
+  h2, 
+  li {
     color: #fff;
+  }
+
+  li {
+    font-size: 1.6rem;
+    position: relative;
+    &::before {
+      position: absolute;
+      background: orangered;
+      height: 8px;
+      width: 8px;
+      border-radius: 100%;
+      content: "";
+      left: -20px;
+      transform: translateY(10px);
+    }
   }
 
 }
