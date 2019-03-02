@@ -110,6 +110,8 @@
             <div class="video-wrapper">
               <video class="video" autoplay loop>
                 <source src="img/sunyoswego.mp4" type="video/mp4">
+                <source src="img/sunyoswego.mp4" type="video/ogg">
+                    Your browser does not support the video tag.
               </video>
             </div>
           </div>
@@ -195,7 +197,6 @@
           $('html, body').animate({
             scrollTop: $(hash).offset().top
           }, 900, function () {
-
             // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
           });
