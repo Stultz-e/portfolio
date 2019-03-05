@@ -229,12 +229,12 @@ textarea {
   background-color: #171717; }
   .skills h2, .skills ul {
     padding-left: 4rem; }
-  .skills h2,
-  .skills li {
+  .skills h2 {
     color: #fff; }
   .skills li {
     font-size: 1.6rem;
-    position: relative; }
+    position: relative;
+    color: rgba(255, 255, 255, 0.6); }
     .skills li::before {
       position: absolute;
       background: orangered;

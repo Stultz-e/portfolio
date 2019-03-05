@@ -345,14 +345,14 @@ textarea {
     padding-left: 4rem;
   }
 
-  h2, 
-  li {
+  h2{
     color: #fff;
   }
 
   li {
     font-size: 1.6rem;
     position: relative;
+    color: rgba(255, 255, 255, 0.6);
     &::before {
       position: absolute;
       background: orangered;
